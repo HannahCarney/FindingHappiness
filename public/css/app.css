@@ -34,6 +34,40 @@ header {
 
 }
 
+.smallcaps {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.7em;
+  font-weight: 700;
+  top: -20px;
+  left: -20px;
+}
+
+.panel {
+  position: relative;
+  display: block;
+  padding-top: 10%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14pt;
+}
+  .panel .textbox {
+    text-align: center;
+    height: 100%;
+  }
+
+  .panel p {
+    color: grey;
+  }
+
+  .panel h1 {
+    color: #CC6699;
+    text-align: center;
+  }
+
+
+
   @media screen and (max-width: 768px) {
     #title {
       font-size: 16px;
@@ -47,6 +81,10 @@ header {
       #title #subheader {
         display: none;
       }
+      .panel {
+        padding-top:2%;
+      }
+
       .panel p {
         font-size: .7em;
       }
@@ -73,16 +111,6 @@ header {
       font-size: 4.5em;
     }
 
-    #title #titlecontainer .smallcaps {
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 0.5em;
-      font-size: 0.5em;
-      font-weight: 700;
-      top: -20px;
-      left: -20px;
-    }
-
     #title #downlink:hover {
       color: #FFFFFF;
       cursor: pointer;
@@ -101,27 +129,6 @@ header {
         }
       }
 
-.panel {
-  position: relative;
-  display: block;
-  padding-top: 10%;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 14pt;
-}
-  .panel .textbox {
-    text-align: center;
-    height: 100%;
-  }
-
-  .panel p {
-    color: grey;
-  }
-
-  .panel h1 {
-    color: #CC6699;
-    text-align: center;
-  }
 
 .cursive {
     font-family: 'Leckerli One', cursive;
