@@ -18,8 +18,8 @@ $(document).ready(function() {
     id = id.replace("link", "");
       // Scroll
     $('html,body').animate( {
-        scrollTop: $("#"+id).offset().top - ($(window).height() - $("#"+id).height())
-    });
+        scrollTop: $("#"+id).offset().top
+    }, 2000);
   };
 
   $(".fa-arrow-circle-down").click(function(e) { 
@@ -29,11 +29,13 @@ $(document).ready(function() {
   
   $(document).on("click", "#submit", function(e) {
     e.preventDefault();
+    goToByScroll("downlink")
     postSentence($("#sentence").val()); 
   });
 
   $(document).on("click", "#again", function(e) {
     e.preventDefault();
+    goToByScroll("downlink")
     $(".textbox").removeAttr("hidden");
     $(".result-wrapper").prop("hidden", "hidden");   
   });
