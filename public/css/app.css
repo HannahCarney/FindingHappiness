@@ -35,7 +35,8 @@ header {
 }
 
 .result-wrapper {
-  padding-bottom: 70%
+  padding-bottom: 50%;
+  padding-top:10%;
 }
 
 .smallcaps {
@@ -70,10 +71,6 @@ header {
   text-align: center;
   padding-bottom: 50%;
   height: 100%;
-}
-
-.result-wrapper {
-  padding-top:10%;
 }
 
 #titlecontainer {

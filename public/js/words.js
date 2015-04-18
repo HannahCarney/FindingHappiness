@@ -28,7 +28,10 @@ function Words() {
 
   Words.prototype.getResult = function() {
     this.splitSentence();
-    if (this.happyCounter >= this.sadCounter * 1.5) {
+    if (this.happyCounter === 0 && this.sadCounter === 0) {
+      return "unknown"
+    }
+    else if (this.happyCounter >= this.sadCounter * 1.5) {
       return "happy."
     }
     else if (this.sadCounter  >= this.happyCounter * 1.5) {

@@ -1,5 +1,6 @@
 var postSentence = function(sentence) {
   $.post("/sentence", {sentence: sentence}, function() {
+    // If successful
     $(".textbox").prop("hidden", "hidden");
     $(".result-wrapper").removeAttr("hidden"); 
     $("#sentence-again").text($("#sentence").val());
