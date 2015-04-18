@@ -13,30 +13,32 @@ var getResults = function() {
   });
 };
 
-$(document).ready(function() {
-  function goToByScroll(id){
-    id = id.replace("link", "");
-      // Scroll
-    $('html,body').animate( {
-        scrollTop: $("#"+id).offset().top
-    }, 2000);
-  };
+// Scroll to element function
+var goToByScroll = function(id){
+  id = id.replace("link", "");
+  $('html,body').animate( {
+      scrollTop: $("#"+id).offset().top
+  }, 2000);
+};
 
-  $(".fa-arrow-circle-down").click(function(e) { 
+$(document).ready(function() {
+
+  $(document).on("click", ".fa-arrow-circle-down", function(e) { 
     e.preventDefault(); 
     goToByScroll($(this).attr("id"));           
   });
   
   $(document).on("click", "#submit", function(e) {
     e.preventDefault();
-    goToByScroll("downlink")
+    goToByScroll("downlink");
     postSentence($("#sentence").val()); 
   });
 
   $(document).on("click", "#again", function(e) {
     e.preventDefault();
-    goToByScroll("downlink")
+    goToByScroll("downlink");
     $(".textbox").removeAttr("hidden");
     $(".result-wrapper").prop("hidden", "hidden");   
   });
+
 });

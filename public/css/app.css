@@ -29,7 +29,7 @@ header {
   background-color: black;
   height: 100%;
   width: 100%;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 15%;
 
 }
@@ -56,11 +56,6 @@ header {
   margin: 0 auto;
   font-size: 14pt;
 }
-  .textbox {
-    text-align: center;
-    padding-bottom: 50%;
-    height: 100%;
-  }
 
   .panel p {
     color: grey;
@@ -71,82 +66,87 @@ header {
     text-align: center;
   }
 
+.textbox {
+  text-align: center;
+  padding-bottom: 50%;
+  height: 100%;
+}
 
+.result-wrapper {
+  padding-top:10%;
+}
 
-  @media screen and (max-width: 768px) {
-    #title {
-      font-size: 16px;
-    } 
-  }
+#titlecontainer {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+}
 
-  @media screen and (max-width: 480px) {
-      #title {
-        background-color: none;
-      }
-      #title #subheader {
-        display: none;
-      }
-      .panel {
-        padding-top: 2%;
-        padding-bottom: 0%;
-      }
+.finding {
+  font-family: 'Leckerli One', cursive;
+  font-size: 4.5em;
+}
 
-      .panel p {
-        font-size: .7em;
-      }
+#downlink {
+  font-size: 3em;
+}
 
-      .textbox {
-        padding-bottom: 30%;
-      }
-
-      .background {
-        padding: 0%;
-      }
-      
-      .result-wrapper {
-        padding-bottom:50%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-      }
-  }
-
-   #titlecontainer {
-    margin: 0 auto;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    top: 50%;
-  }
-
-    #title #titlecontainer .finding {
-      font-family: 'Leckerli One', cursive;
-      font-size: 4.5em;
-    }
-
-    #title #downlink:hover {
-      color: #FFFFFF;
-      cursor: pointer;
-    }
-      @media screen and (max-width: 768px) {
-        #title #titlecontainer:hover {
-          color: #CC6699;
-        }
-      }
-    #title #titlecontainer #downlink {
-      font-size: 3em;
-    }
-      @media screen and (max-width: 768px) {
-        #title #titlecontainer #downlink {
-          display: none;
-        }
-      }
-
+#downlink:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
 
 .cursive {
-    font-family: 'Leckerli One', cursive;
-    font-size: 1em;
+  font-family: 'Leckerli One', cursive;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    font-size: 16px;
+  }
+  #titlecontainer:hover {
+    color: #CC6699;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  #title {
+    background-color: none;
+  }
+  #subheader {
+    display: none;
+  }
+  .panel {
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+
+  .panel p {
+    font-size: .7em;
+  }
+
+  .textbox {
+    padding-bottom: 30%;
+  }
+
+  .background {
+    padding: 0%;
+  }
+  
+  .result-wrapper {
+    padding-bottom:50%;
+  }
+
+  #downlink {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
 }
 
 input[type=text] {
