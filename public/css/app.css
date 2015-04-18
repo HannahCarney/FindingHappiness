@@ -82,7 +82,8 @@ header {
         display: none;
       }
       .panel {
-        padding-top:2%;
+        padding-top: 2%;
+        padding-bottom: 50%;
       }
 
       .panel p {
