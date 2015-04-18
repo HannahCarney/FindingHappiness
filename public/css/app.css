@@ -52,8 +52,9 @@ header {
   margin: 0 auto;
   font-size: 14pt;
 }
-  .panel .textbox {
+  .textbox {
     text-align: center;
+    padding-bottom: 50%;
     height: 100%;
   }
 
@@ -91,7 +92,7 @@ header {
       }
 
       .textbox {
-        padding-bottom: 25%;
+        padding-bottom: 45%;
       }
 
       .background {
