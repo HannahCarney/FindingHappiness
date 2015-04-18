@@ -29,13 +29,13 @@ function Words() {
   Words.prototype.getResult = function() {
     this.splitSentence();
     if (this.happyCounter > this.sadCounter) {
-      return "happy"
+      return "happy."
     }
     else if (this.sadCounter > this.happyCounter) {
-      return "sad"
+      return "sad."
     }
     else {
-      return "unknown"
+      return "unknown."
     }
 
   };

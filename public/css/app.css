@@ -54,6 +54,10 @@ header {
       .textbox {
         padding-bottom: 30%;
       }
+
+      .background {
+        padding: 0%;
+      }
   }
 
    #titlecontainer {
