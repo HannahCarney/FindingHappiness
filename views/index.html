@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Karla:700,400italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+  <!-- icons -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="vendor/animate.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- scripts -->
+  <script src="vendor/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+  <title>Finding Happiness</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div id="title">
+      <div class="background">
+        <div id="titlecontainer">
+          <div class="finding">Finding</div>
+          <div class="smallcaps">Happiness</div>
+          <a href="#" class="fa fa-arrow-circle-down" id="downlink"></a>
+          <div class="" id="subheader">
+            <p>I can discover</p>
+            <p>if you are</p>
+            <p>happy or sad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="textbox" style="padding-bottom: 50%;">
+          <h1>Enter a Sentence</h1>
+          <form>
+            <input id="sentence" type="text" /> 
+            <input type="submit" href="#" name="submit" value="Submit" id="submit"/>
+          </form> 
+          <p>The word happiness would lose its meaning</p>
+          <p>if it were not balanced by sadness.</p>
+          <p class="cursive">- Carl Jung </p>   
+        </div>
+        <div class="result-wrapper" style="padding-bottom: 60%;" hidden="hidden">
+          <h2 id="sentence-again"></h2>
+          <p id="results"></p>
+           <input type="submit" href="#" name="again" value="Again" id="again"/>
+        </div>
+        <p id="down">Copyright &copy; Hannah Carney 2015</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="js/words.js"></script>
+<script src="js/interface.js"></script>
+ 
+</script>
+

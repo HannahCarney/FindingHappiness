@@ -1,0 +1,143 @@
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0px;
+  color: #5F5F5F;
+  font-size: 16pt;
+  text-align: left;
+
+}
+
+a {
+  color: #CC6699;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+}
+
+#title {
+  color: #CC6699;
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+
+}
+
+.background {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+}
+
+  @media screen and (max-width: 768px) {
+    #title {
+      font-size: 16px;
+    } 
+  }
+
+  @media screen and (max-width: 480px) {
+      #title {
+        background-color: none;
+      }
+      #title #subheader {
+        display: none;
+      }
+      .panel p {
+        font-size: .7em;
+      }
+
+      .textbox {
+        padding-bottom: 30%;
+      }
+  }
+
+   #titlecontainer {
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+  }
+
+    #title #titlecontainer .finding {
+      font-family: 'Leckerli One', cursive;
+      font-size: 4.5em;
+    }
+
+    #title #titlecontainer .smallcaps {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      font-size: 0.5em;
+      font-weight: 700;
+      top: -20px;
+      left: -20px;
+    }
+
+    #title #downlink:hover {
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+      @media screen and (max-width: 768px) {
+        #title #titlecontainer:hover {
+          color: #CC6699;
+        }
+      }
+    #title #titlecontainer #downlink {
+      font-size: 3em;
+    }
+      @media screen and (max-width: 768px) {
+        #title #titlecontainer #downlink {
+          display: none;
+        }
+      }
+
+.panel {
+  position: relative;
+  display: block;
+  padding-top: 10%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14pt;
+}
+  .panel .textbox {
+    text-align: center;
+    height: 100%;
+  }
+
+  .panel p {
+    color: grey;
+  }
+
+  .panel h1 {
+    color: #CC6699;
+    text-align: center;
+  }
+
+.cursive {
+    font-family: 'Leckerli One', cursive;
+    font-size: 1em;
+}
+
+input[type=text] {
+  padding:5px; border:2px solid #CC6699; 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=text]:focus {
+  outline: none;
+  font-family: 'Karla', sans-serif
+}
+
+input[type=submit] {
+  padding:5px 15px; background:#ccc; border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
