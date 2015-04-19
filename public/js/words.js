@@ -2,7 +2,7 @@ function Words() {
 
   this.happyWords = ["delight", "delighted", "delightful", "happy", "glad", "joy", "joyful", "merry", "pleasant"];
   this.sadWords = ["disappointed", "miserable", "sad", "sorrow", "unhappy"];
-  this.sentence
+  this.sentence = "";
   this.sadCounter = 0;
   this.happyCounter = 0;
 
@@ -23,22 +23,23 @@ function Words() {
       else if (this.sadWords.indexOf(sentence[i]) > -1) {
         this.sadCounter ++;
       }
-    };
+    }
+    return sentence;
   };
 
   Words.prototype.getResult = function() {
     this.splitSentence();
     if (this.happyCounter === 0 && this.sadCounter === 0) {
-      return "unknown"
+      return "unknown";
     }
     else if (this.happyCounter >= this.sadCounter * 1.5) {
-      return "happy."
+      return "happy.";
     }
     else if (this.sadCounter  >= this.happyCounter * 1.5) {
-      return "sad."
+      return "sad.";
     }
     else {
-      return "unknown."
+      return "unknown.";
     }
   };
 

@@ -3,7 +3,6 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
-var io = require('socket.io')(server);
 var words = require('./public/js/words');
 var bodyParser = require('body-parser');
 
@@ -13,13 +12,9 @@ var db = new words();
 
 // Server Set-up
 app.set('view engine', 'html');
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({'extended':'true'}));
-app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-io.on('connection', function(socket) {
-});
 
 function Server(dBase) {
   this.db = dBase;
@@ -27,7 +22,7 @@ function Server(dBase) {
 
 Server.prototype.init = function(port, cBack) {
   _this = this;
-  require('./routes/index')(app, _this.db, io);
+  require('./routes/index')(app, _this.db);
   server.listen(port, cBack);
 };
 

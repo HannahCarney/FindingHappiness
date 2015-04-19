@@ -23,7 +23,6 @@ var goToByScroll = function(id){
 };
 
 $(document).ready(function() {
-
   $(document).on("click", ".fa-arrow-circle-down", function(e) { 
     e.preventDefault(); 
     goToByScroll($(this).attr("id"));           
@@ -41,5 +40,4 @@ $(document).ready(function() {
     $(".textbox").removeAttr("hidden");
     $(".result-wrapper").prop("hidden", "hidden");   
   });
-
 });
