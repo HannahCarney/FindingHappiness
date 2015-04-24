@@ -4,7 +4,7 @@ var expect = require("chai").expect;
   var client = {};
 
   before(function(done) {
-    client = webdriverio.remote({ desiredCapabilities : {browserName: 'chrome'} });
+    client = webdriverio.remote({desiredCapabilities : {browserName: "chrome"}});
     client.init(done);
   });
 

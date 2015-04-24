@@ -5,7 +5,7 @@ function Words() {
   this.sentence = "";
   this.sadCounter = 0;
   this.happyCounter = 0;
-
+  
 }
 
   Words.prototype.add = function(sentence) {
@@ -15,7 +15,7 @@ function Words() {
   };
 
   Words.prototype.splitSentence = function() {
-    var sentence = (this.sentence).replace(/[^a-zA-Z0-9]/g, ' ').toLowerCase().split(" ");
+    var sentence = (this.sentence).replace(/[^a-zA-Z0-9]/g, " ").toLowerCase().split(" ");
     for (var i = 0; i < +sentence.length; i ++) {
       if (this.happyWords.indexOf(sentence[i]) > -1) {
         this.happyCounter ++;

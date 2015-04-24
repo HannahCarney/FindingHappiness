@@ -37,7 +37,12 @@ Requirements
 Design Choices
 -------
 
-I used Ajax to make GET and POST requests to the server when a user enters their sentence. Ajax allows exchanges of small amounts of data to simulate a mock database. It is possible to then update parts of the web page without reloading the whole page. Single page apps, in my opinion, are becoming very hip and also increase user experience. The interface, in general, is very simple and so it is very clear what the application does. I decided to learn how to use a JQuery scroll function to create a more exciting design. I especially enjoyed finding fonts and colors that work together and manipulating them through CSS. I decided to use chai/mocha/selenium for my test stack, because I feel that the combination allows for maximum test coverage. I used the Nyan mocha cat to make testing a little more fun, as well as JSHint to make sure my formatting and syntax is correct. Lint runs after the tests are run, and only logs messages if it finds any errors.
+I used Ajax to make GET and POST requests to the server when a user enters their sentence. Ajax allows exchanges of small amounts of data to simulate a mock database. It is possible to then update parts of the web page without reloading the whole page. Single page apps, in my opinion, are becoming very hip and also increase user experience.
+
+The interface, in general, is very simple and so it is very clear what the application does. I decided to learn how to use a JQuery scroll function to create a more exciting design. I especially enjoyed finding fonts and colors that work together and manipulating them through CSS.
+
+I decided to use chai/mocha/selenium for my test stack, because I feel that the combination allows for maximum test coverage. Selenium webdriverio lets tests enter the browser and explore as if it were a user. I used the Nyan mocha cat to make testing a little more fun, as well as JSHint to make sure my formatting and syntax is correct. Lint runs after the tests are run, and only logs messages if it finds any errors. I've also recently gotten really into Makefiles. To just run lint, for example, you can type "make lint," or you can run all my tests and lint together through "make test." I find it a very easy and functional way for others to recompile my code. It would be especially useful for large programs so that many lengthly commands can be shortened.
+
 
 Install dependencies
 ----
@@ -50,6 +55,7 @@ Run locally
 ----
 
 ```sh
+cd twsu_happysad
 npm start
 ```
 
@@ -57,6 +63,8 @@ Visit http://localhost:3000/
 
 Run tests
 ----
+
+[Install Phantomjs](http://phantomjs.org/)
 
 Start Selenium Webdriver
 

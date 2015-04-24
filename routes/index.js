@@ -1,6 +1,7 @@
 var path = require('path');
 
 function routes(app, db) {
+  
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../views", "/index.html"));
   });
